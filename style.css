@@ -1,69 +1,81 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #444;
-  }
-  
-  /* Styling for the user list */
-  #user-list {
-    list-style: none;
-    margin: 20px auto;
-    padding: 0;
-    max-width: 600px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  align-items: center;
+  justify-content: center;
+}
 
-  #user-list li {
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+h1 {
+  text-align: center;
+  color: #444;
+}
 
+/* Styling for the user list */
+#user-list {
+  list-style: none;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#user-list li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 h2 {
-    text-align: center;
-    margin-top: 20px;   
-    color: #444;        
-  }
-  
-  #user-list li:last-child {
-    border-bottom: none;
-  }
-  
- 
-  #user-list li:hover {
-    background-color: #f0f8ff;
-  }
-  
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+}
 
-  #user-list li p {
-    margin: 0;
-  }
-  
-  
-  #user-list li .user-name {
-    font-weight: bold;
-    color: #0073e6;
-  }
-  
+#user-list li:last-child {
+  border-bottom: none;
+}
 
-  #user-list li .user-email {
-    font-style: italic;
-    color: #555;
-  }
-  
+#user-list li:hover {
+  background-color: #f0f8ff;
+}
+
+#user-list li p {
+  margin: 0;
+}
+
+#user-list li .user-name {
+  font-weight: bold;
+  color: #0073e6;
+}
+
+#user-list li .user-email {
+  font-style: italic;
+  color: #555;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+input {
+  width: 600px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
